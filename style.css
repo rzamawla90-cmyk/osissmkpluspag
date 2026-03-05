@@ -127,6 +127,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
+    margin-top:30px;
 }
 
 .card {
@@ -380,6 +381,7 @@ color:#aaa;
         padding: 15px 5%;
     }
 }
+
 
 
 
