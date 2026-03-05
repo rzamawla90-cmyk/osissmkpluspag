@@ -154,6 +154,39 @@ body {
     margin-bottom: 6px;
 }
 
+
+
+.card-container-kepsek{     /*==== container kepsek ====*/
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 20px;
+}
+
+
+
+.card-container-ketos{      /*==== container ketos ====*/
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    gap: 20px;
+    
+}
+
+
+.card-container-sekertaris{ /*=== container sekertaris ===*/
+    
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+
+}
+
 /* ================= GALLERY ================= */
 .gallery {
     padding: 100px 8%;
@@ -347,6 +380,7 @@ color:#aaa;
         padding: 15px 5%;
     }
 }
+
 
 
 
