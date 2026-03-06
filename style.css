@@ -180,11 +180,12 @@ body {
 
 .card-container-sekertaris{ /*=== container sekertaris ===*/
     
-  display: grid;
-  grid-template-columns: repeat(2, 250px);
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
   justify-content: center;
   gap: 30px;
-  margin-top: 20px;
+  margin: 20px auto;
 
 }
 
@@ -381,6 +382,7 @@ color:#aaa;
         padding: 15px 5%;
     }
 }
+
 
 
 
