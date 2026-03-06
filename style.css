@@ -354,7 +354,7 @@ color:#aaa;
     }
 
     .hero-content img{
-        position: hide;
+        display:none;
     }
 
     /* NAV MENU MOBILE */
@@ -514,6 +514,7 @@ color:#aaa;
     border-radius: 50% / 30%; /* jadi oval saat layar sempit */
   }
 }
+
 
 
 
