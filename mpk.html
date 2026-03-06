@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bpmf+Zihi+Kai+Std&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<!--AOS-->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+
+    <style>
+    /* ================= Smooth AOS Animation ================= */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition-property: opacity, transform;
+      transition-duration: 1s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+</head>
+<body>
+     <nav class="navbar" data-aos="fade-down">
+    <div class="logo">
+      <img src="logo.png" alt="Logo OSIS">
+      <img src="logo33.png" alt="Logo MPK">
+      <img src="logo22.png" alt="Logo SMK">
+      
+    </div>
+    <div class="nav-menu" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#kepengurusan">Kepengurusan</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="mpk.html">Mpk</a>
+      <a href="https://smkpag.sch.id/">Our School</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="hero-mpk">
+    <div class="hero-img" data-aos="fade-down" data-aos-delay="100">
+        <img src="logo33.png" alt="">
+    </div>
+    <div class="hero-text-mpk">
+        <h1 data-aos="fade-up" data-aos-delay="200">MPK</h1>
+        <h3 data-aos="fade-up" data-aos-delay="300">Majelis Permusyawaratan Kelas</h3>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- Hamburger JS -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+  <!-- Init AOS Smooth -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 100
+      });
+    });
+  </script>
+</body>
+</html>
