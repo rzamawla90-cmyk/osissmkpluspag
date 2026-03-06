@@ -503,17 +503,24 @@ color:#aaa;
 
 /* Responsif untuk tablet / mobile */
 @media (max-width: 768px) {
-    .hero-mpk{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        
-    }
-  .hero-img img {
-    margin-top: 15%;
-    border-radius: 50% / 30%; /* jadi oval saat layar sempit */
+
+  .hero-mpk{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      text-align: center;
+      padding-top: 120px;   /* jarak dari background atas */
   }
+
+  .hero-img img{
+      width: 200px;
+      height: auto;
+  }
+
 }
+
 
 
 
