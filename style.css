@@ -437,6 +437,77 @@ color:#aaa;
 }
 
 
+/*=== mpk.html ===*/
+
+.hero-mpk{
+  height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: url('backg.png');
+
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    min-width: 500px; 
+    border-radius: 30px;
+ 
+
+}
+
+.hero-text-mpk{
+  flex: 1;
+  color: #ccc;
+}
+
+.hero-text-mpk h1{
+ font-family: estion;
+}
+
+.hero-text-mpk h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-img{
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img{
+  max-width: 350px;
+  width: 100%;
+
+     
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;     /* lingkaran default untuk desktop */
+  object-fit: cover;      /* agar gambar tidak terdistorsi */
+  transition: border-radius 0.3s ease; /* animasi halus saat berubah */
+}
+
+/* Responsif untuk tablet / mobile */
+@media (max-width: 768px) {
+    .hero-mpk{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+  .hero-img img {
+    margin-top: 15%;
+    border-radius: 50% / 30%; /* jadi oval saat layar sempit */
+  }
+}
+
+
+
+
 
 
 
