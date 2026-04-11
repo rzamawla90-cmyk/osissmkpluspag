@@ -55,6 +55,30 @@ b{
 
     </div>
 
-   
+   <script>
+  const numStars = 300; // lebih banyak
+  for(let i = 0; i < numStars; i++){
+    const star = document.createElement('div');
+    star.classList.add('star');
+    
+    // posisi horizontal acak
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    
+    // posisi vertikal acak dari atas (-100vh supaya muncul bertahap)
+    star.style.top = Math.random() * -window.innerHeight + 'px';
+    
+    // ukuran acak
+    const size = Math.random() * 2 + 1; // 1px sampai 3px
+    star.style.width = star.style.height = size + 'px';
+    
+    // kecepatan acak (lebih bervariasi)
+    star.style.animationDuration = (Math.random() * 5 + 3) + 's';
+    
+    // delay acak supaya jatuh tidak bersamaan
+    star.style.animationDelay = Math.random() * 5 + 's';
+    
+    document.body.appendChild(star);
+  }
+</script>
 </body>
 </html>
